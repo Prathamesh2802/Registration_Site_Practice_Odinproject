@@ -1,0 +1,130 @@
+*,*::before,*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --font:'ariel'
+}
+
+.maindivision
+{
+    width: 100%;
+}
+.flex
+{
+    display: flex;
+}
+
+.background
+{
+    width: 50%;
+    height:1007px;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background >img
+{
+    background-repeat: no-repeat;
+    height: 200px;
+    display: block;
+    margin: 200px auto;
+}
+
+.content
+{
+    
+    width: 50%;
+    font-style: var(--font);
+}
+
+.flex-1
+{
+ height: 350px;
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+ width: 68%;
+ padding: 0 2rem;
+
+}
+
+.flex-1 > h1:nth-child(2)
+{
+    margin-top: 2rem;
+}
+
+.grid
+{
+    padding-top: 1rem;
+    margin: 0rem 0 3rem 0; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+}
+
+.forms
+{
+    padding: 5rem 3rem;
+    width: 100%;
+    
+}
+
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+
+}
+
+ul
+{
+    padding: 1rem 1rem;
+    color: red;
+    font-size: 14px;
+}
+
+.leftsection >input, .rightsection >input
+{
+    margin-top: 0.5rem;
+    width: 70%;
+    height: 2.0rem;
+    border: 1px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 5%;
+}
+
+.grid>.leftsection >p, .grid>.rightsection >p
+{
+    padding-top: 1rem;
+}
+
+.leftsection >input:focus, .rightsection >input:focus
+{
+   border: 1px solid blue;
+}
+
+.btn
+{
+    background-color: #596D48;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    border-radius: 5%;
+    outline: none;
+    border: none;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.grid
+{
+    box-shadow: 0 8px 6px -6px grey;
+}
